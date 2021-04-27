@@ -1,0 +1,159 @@
+/*font-face rule*/
+@font-face {
+  font-family: "Garamond";
+  src: url('EBGaramond-Regular.ttf') format("truetype"); 
+}
+
+.home main{ 
+  background-image: url(city.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.investors main {
+  background-color: darkblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.strategy main {
+  background-color: darkred;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.team main {
+  background-color: darkgreen;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.foot { 
+  width: 32px;
+  height: 32px;
+}
+img:not(.foot) { 
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+}
+body { 
+  font-family: "Garamond";
+  margin: 0;
+}
+p { 
+    /* font family and size*/
+  font-family: "Garamond";
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  padding: 2% 2%;
+}
+li { 
+  display:inline;
+  padding: 4%;
+}
+h2 {
+  /* font family and size*/
+  font-family: "Garamond";
+  color: white;
+  font-size: 50%
+}
+a {
+  color: white;
+}
+a:link { 
+  text-decoration-line: none;
+  color:white;
+}
+a:visited{
+  color:white;
+}
+a:hover{
+  color:rgb(46, 65, 228);
+}
+a:active{
+  color:purple;
+}
+
+  /* CSS Grid Layout*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'nav nav nav'
+  'main main main'
+  'footer footer footer';
+}
+  
+  .item1 { grid-area: header; }
+  .item2 { grid-area: nav; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: footer; }
+  
+  /* Media Breakpoints*/
+  @media screen and (max-width: 9000px){
+     
+  }
+  @media screen and (max-width: 600px){
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+      'header'
+      'nav'
+      'main'
+      'footer';
+    }
+  }
+
+  h1 { 
+      /* font family and size*/
+    color: white;
+    padding: 200px;
+    font-family: "Garamond";
+  }
+
+  li { 
+    list-style-type: none;
+    color:white;
+  }
+
+  header {
+    /*
+    border-style: solid;
+    border-color:white;
+    border-width: 5px;
+    */
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 1% 0; 
+  }
+  
+  nav {
+    border-style: solid;
+    border-color:white;
+    border-width: 5px;
+    /*border-top: none;*/
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 1.5% 0;
+    font-size: 160%;
+  }
+  
+  footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+    

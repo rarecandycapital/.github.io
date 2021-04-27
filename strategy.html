@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class = "strategy">
+    <head> 
+        <meta charset="utf-8">
+        <!--responsive layout-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rare Candy Capital</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div class = "grid-container"> 
+        <header class="item1">
+            <!--image with src, alt, width, height-->
+            <a href="index.html">
+                <!--2x size srcset -->
+                <picture> 
+                    <source media = "(max-width: 600px)" srcset="rcblack2.png">
+                    <source media = "(max-width: 9000px)" srcset="rcblack.png">
+    
+                    <img src= "rcblack.png" alt="logo" width="50%" height="100%"> </img>
+                </picture>
+            </a>
+        </header>
+        <nav class = "item2"> 
+            <!--relative links-->
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="team.html">Team</a></li>
+        </nav>
+        <main class = "item3"> 
+            <!-- semantic element: p and aforementioned sections/elements in index.html-->
+            <p> Our Hedge Fund is a Limited Partnership located in Goldenrod City. For liquidity purposes, we take a multitude of stakes in small positions, purchase high value, high growth, underpriced cards, and perform market making services.</p>
+            <!--srcset-->
+            <picture> 
+                <source media = "(max-width: 600px)" srcset="Rare Candy Capital Strategy2.png">
+                <source media = "(max-width: 9000px)" srcset="Rare Candy Capital Strategy.png">
+
+                <img src= "Rare Candy Capital Strategy.png" alt="strategy" max-width: 30% max-height: 30% width: auto height: auto> </img>
+            </picture>
+            <picture> 
+                <source media = "(max-width: 600px)" srcset="Rare Candy Capital Structure2.png">
+                <source media = "(max-width: 9000px)" srcset="Rare Candy Capital Structure.png">
+
+                <img src= "Rare Candy Capital Structure.png" alt="structure" max-width: 30% max-height: 30% width: auto height: auto> </img>
+            </picture>
+        </main>
+        <footer class = "item4"> 
+            <!-- semantic element: h2--> 
+            <h2 id = "colorChange" onclick = "changeColor()"> ©2021 Rare Candy Capital</h2>
+            <!--32 x 32 SVG Image-->
+            <img src= "Rare Candy Black SVG.svg" class="foot" alt="logo" width="32px" height="32px"> </img>
+        </footer>
+    </div>
+</body>

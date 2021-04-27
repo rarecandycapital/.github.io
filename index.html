@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class = "home">
+    <head> 
+        <meta charset="utf-8">
+        <!--responsive layout-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rare Candy Capital</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div class = "grid-container">
+        <!-- semantic element: header--> 
+        <header class="item1">
+            <!--image with src, alt, width, height-->
+            <a href="index.html">
+                <!--2x size srcset -->
+                <picture> 
+                    <source media = "(max-width: 600px)" srcset="rcblack2.png">
+                    <source media = "(max-width: 9000px)" srcset="rcblack.png">
+    
+                    <img src= "rcblack.png" alt="logo" width="50%" height="100%"> </img>
+                </picture>
+                
+            </a>
+        </header>
+        <nav class = "item2"> 
+            <!--relative links-->
+            <li><a href="investors.html"  >Investors</a></li>
+            <li><a href="strategy.html" >Strategy</a></li>
+            <li><a href="team.html" >Team</a></li>
+        </nav>
+        <!-- semantic section: main (assumed for all other pages)--> 
+        <main class = "item3"> 
+            <!-- semantic element: h1--> 
+            <h1 id = "backChange" onclick= "changeBackground()">Catching the Next Investments</h1> 
+        </main>
+         <!-- semantic element: footer--> 
+        <footer class = "item4"> 
+            <!-- semantic element: h2--> 
+            <h2 id = "colorChange" onclick = "changeColor()"> ©2021 Rare Candy Capital</h2>
+            <!--32 x 32 SVG Image-->
+            <img src= "Rare Candy Black SVG.svg" class="foot" alt="logo" width="32px" height="32px"> </img>
+        </footer>
+    </div>
+</body>
